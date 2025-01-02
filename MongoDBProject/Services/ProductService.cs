@@ -13,9 +13,9 @@ namespace MongoDBProject.Services
 
         public ProductService(IMapper mapper, IDatabaseSettings _databaseSettings)
         {
-            var client = new MongoClient(_databaseSettings.ConectionString);
+            var client = new MongoClient(_databaseSettings.ConnectionString);
             var database = client.GetDatabase(_databaseSettings.DatabaseName);
-            _productCollection = database.GetCollection<Product>(_databaseSettings.ProductColletionName);
+            _productCollection = database.GetCollection<Product>(_databaseSettings.ProductCollectionName);
             _mapper = mapper;
         }
 

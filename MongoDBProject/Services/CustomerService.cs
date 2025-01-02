@@ -13,7 +13,7 @@ namespace MongoDBProject.Services
 
         public CustomerService(IMapper mapper, IDatabaseSettings _databaseSettings)
         {
-            var client = new MongoClient(_databaseSettings.ConectionString);
+            var client = new MongoClient(_databaseSettings.ConnectionString);
             var database = client.GetDatabase(_databaseSettings.DatabaseName);
             _customerCollection = database.GetCollection<Customer>(_databaseSettings.CustomerCollectionName);
 
