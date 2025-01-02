@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MongoDBProject.Dtos;
+using MongoDBProject.Dtos.ProductDtos;
 using MongoDBProject.Entities;
 
 namespace MongoDBProject.Mapping
@@ -12,6 +13,12 @@ namespace MongoDBProject.Mapping
 			CreateMap<Customer,CreateCustomerDto>().ReverseMap();
 			CreateMap<Customer,UpdateCustomerDto>().ReverseMap();
 			CreateMap<Customer,GetByIdCustomerDto>().ReverseMap();
+
+			CreateMap<Product,ResultProductDto>().ReverseMap();
+			CreateMap<Product,CreateProductDto>().ReverseMap();
+			CreateMap<Product,GetByIdProductDto>().ReverseMap();
+			CreateMap<Product,UpdateProductDto>().ReverseMap();
+			
 
 		}
 	}
