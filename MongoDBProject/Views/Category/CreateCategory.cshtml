@@ -1,0 +1,14 @@
+﻿@model MongoDBProject.Dtos.CategoryDtos.CreateCategoryDto
+@{
+    Layout = null;
+}
+
+<div class="container">
+    <br /><br />
+    <form method="post">
+        <label>Kategori Adı</label>
+        <input type="text" asp-for="CategoryName" />
+        <br />
+        <button class="btn btn-info">Kategoriyi Ekle</button>
+    </form>
+</div>

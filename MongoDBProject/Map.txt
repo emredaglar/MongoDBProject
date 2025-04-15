@@ -1,0 +1,17 @@
+﻿Bir mongoDB projesidir.
+
+-Customer(Müşteri) entities oluşturduk.
+-Entitye ait DTOları yazdık.
+-Mapleme için automapper packets kurduk
+-Setting klasörü oluşturduk. Bu bizim bağlantı adresmlerimizi tutacak klasör olcak.(IDatabaseSetting ekledik.)
+-(IDatabaseSetting ekledik.) settingse ait entity gibi.
+
+-Services klasörü oluşturduk ve ICustomerService interface oluşturduk. CRUD gibi servis intf tutcak.
+-customerservice içerisinde automapper ve ımongocollection ekledik.
+-mapper ile mapleme kolaylaştı ve mongodb ile ekleme gibi işlemleri yaptık.
+-Mapping klasörü oluşturduk ve generalmapping sınıfı ile maplemeyi tanımladık.
+-program.csde scopes ve autommaperi ekledik
+
+-Controller klasöründe bir customer controller oluşturduk.
+-ilgili view eklendi
+-Products için aynı işlemler yapıldı.
