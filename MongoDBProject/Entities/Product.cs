@@ -14,7 +14,7 @@ namespace MongoDBProject.Entities
         public decimal ProductPrice { get; set; }
         [BsonRepresentation(BsonType.ObjectId)]
         public string CategoryId { get; set; }
-        [BsonIgnore] //veritabanına yansıtmaz.
+       /* [BsonIgnore]*/ //veritabanına yansıtmaz.
         public Category Category { get; set; }
 
 

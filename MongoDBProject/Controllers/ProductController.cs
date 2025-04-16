@@ -45,5 +45,10 @@ namespace MongoDBProject.Controllers
             await _productService.UpdateProductAsync(updateProductDto);
             return RedirectToAction("ProductList");
         }
+        public  async Task<IActionResult> ProductListWithCategory()
+        {
+           var values=await _productService.GetAllProductWithCategoryAsync();
+            return View(values);
+        }
     }
 }

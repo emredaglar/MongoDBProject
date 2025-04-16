@@ -45,7 +45,9 @@ namespace MongoDBProject.Services
             {
                 item.Category = await _categoryCollection.Find<Category>(x => x.CategoryId == item.CategoryId).FirstAsync();
 
+
             }
+
             return _mapper.Map<List<ResultProductWithCategoryDto>>(values);
         }
 

@@ -1,0 +1,30 @@
+﻿@using MongoDBProject.Dtos.ProductDtos
+@model List<ResultProductWithCategoryDto>
+@{
+    Layout = null;
+}
+
+<div class="container">
+    <br />
+    <br />
+    <table class="table table-border">
+        <tr>
+            <th>#</th>
+            <th>Ürün</th>
+            <th>Stok</th>
+            <th>Kategori</th>
+           
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ProductId</td>
+                <td>@item.ProductName</td>
+                <td>@item.ProductStock</td>
+                <td>@item.CategoryName</td>
+
+            </tr>
+
+        }
+    </table>
+</div>
